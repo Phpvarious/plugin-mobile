@@ -1027,7 +1027,7 @@ class mobile extends eqLogic
 		}
 		return $return;
 	}
-  
+
 	/**
 	 * remove notification from Id into filepath id
 	 * Call by ajax removeNotificationV2
@@ -1524,14 +1524,15 @@ class mobile extends eqLogic
 							$cmd->setIsVisible(0);
 							$cmd->setOrder($order);
 							$order++;
-							log::add('mobile', 'debug', 'Creation commande Batterie du téléphone');
+							log::add('mobile', 'debug', 'Creation de la commande Batterie du téléphone');
 						}
 						$cmd->setEqLogic_id($this->getId());
 						$cmd->setType('info');
+						$cmd->setConfiguration('calculValueOffset', '#value# * 100');
 						$cmd->setSubType('numeric');
 						if ($cmd->getChanged() === true) $cmd->save();
-						log::add('mobile', 'debug', '|  OK  phoneBattery = ' . $params[$_trigger]['battery']['level'] * 100);
-						$this->checkAndUpdateCmd('phoneBattery', $params[$_trigger]['battery']['level'] * 100);
+						log::add('mobile', 'debug', '| ' . (__('Batterie du téléphone', __FILE__)) . ' = ' . $params[$_trigger]['battery']['level'] * 100 . $cmd->getUnite());
+						$this->checkAndUpdateCmd('phoneBattery', $params[$_trigger]['battery']['level']);
 					}
 					// charging
 					if (isset($params[$_trigger]['battery']['is_charging'])) {
@@ -1549,13 +1550,13 @@ class mobile extends eqLogic
 							$cmd->setIsVisible(0);
 							$cmd->setOrder($order);
 							$order++;
-							log::add('mobile', 'debug', 'Creation commande En charge');
+							log::add('mobile', 'debug', 'Creation de la commande En charge');
 						}
 						$cmd->setEqLogic_id($this->getId());
 						$cmd->setType('info');
 						$cmd->setSubType('binary');
 						if ($cmd->getChanged() === true) $cmd->save();
-						log::add('mobile', 'debug', '|  OK  phoneCharging = ' . intval($params[$_trigger]['battery']['is_charging']));
+						log::add('mobile', 'debug', '| ' . (__('En charge', __FILE__)) . ' = ' . intval($params[$_trigger]['battery']['is_charging']));
 						$this->checkAndUpdateCmd('phoneCharging', intval($params[$_trigger]['battery']['is_charging']));
 					}
 				}
@@ -1576,14 +1577,39 @@ class mobile extends eqLogic
 							$cmd->setIsVisible(0);
 							$cmd->setOrder($order);
 							$order++;
-							log::add('mobile', 'debug', 'Create cmd for coords');
+							log::add('mobile', 'debug', 'Creation de la commande Coordonnées');
 						}
 						$cmd->setEqLogic_id($this->getId());
 						$cmd->setType('info');
 						$cmd->setSubType('string');
 						if ($cmd->getChanged() === true) $cmd->save();
-						log::add('mobile', 'debug', '|  OK  coords = ' . $params[$_trigger]['coords']['latitude'] . ',' . $params[$_trigger]['coords']['longitude']);
+						log::add('mobile', 'debug', '| ' . (__('Coordonnées', __FILE__)) . ' = ' . $params[$_trigger]['coords']['latitude'] . ',' . $params[$_trigger]['coords']['longitude']);
 						$this->checkAndUpdateCmd('coords', $params[$_trigger]['coords']['latitude'] . ',' . $params[$_trigger]['coords']['longitude']);
+					}
+					if (isset($params[$_trigger]['coords']['altitude'])) {
+						$cmd = $this->getCmd(null, 'altitude');
+						if (!is_object($cmd)) {
+							$cmd = new mobileCmd();
+							$cmd->setLogicalId('altitude');
+							$cmd->setName(__('Altude', __FILE__));
+							$cmd->setDisplay('icon', '<i class="icon fas fa-map-marked-alt"></i>');
+							$cmd->setDisplay('showIconAndNamedashboard', 1);
+							$cmd->setDisplay('showIconAndNamemobile', 1);
+							$cmd->setDisplay('forceReturnLineAfter', 1);
+							$cmd->setTemplate('dashboard', 'core::line');
+							$cmd->setTemplate('mobile', 'core::line');
+							$cmd->setIsVisible(0);
+							$cmd->setUnite('m');
+							$cmd->setOrder($order);
+							$order++;
+							log::add('mobile', 'debug', 'Creation de la commande Altitude');
+						}
+						$cmd->setEqLogic_id($this->getId());
+						$cmd->setType('info');
+						$cmd->setSubType('string');
+						if ($cmd->getChanged() === true) $cmd->save();
+						log::add('mobile', 'debug', '| ' . (__('Altitude', __FILE__)) . ' = ' . $params[$_trigger]['coords']['altitude'] . $cmd->getUnite());
+						$this->checkAndUpdateCmd('altitude', $params[$_trigger]['coords']['altitude']);
 					}
 				}
 			}
@@ -1598,7 +1624,7 @@ class mobile extends eqLogic
 	{
 		$notifsTime = $this->getConfiguration('notifsTime', 30);
 		log::add('mobile', 'debug', '┌──────────▶︎ :fg-warning: Nettoyage des Notifications et Images :/fg: ──────────');
-		log::add('mobile', 'debug', '| Durée de retention actuelle : ' . $notifsTime . ' jours');
+		log::add('mobile', 'debug', '| Durée de rétention actuelle : ' . $notifsTime . ' jours');
 		// Images
 		$retentionSeconds = intVal($notifsTime) * 24 * 60 * 60;
 		$currentTime = time();
@@ -1610,7 +1636,7 @@ class mobile extends eqLogic
 					$fileCreationTime = filemtime($image);
 					if ($fileCreationTime < ($currentTime - $retentionSeconds)) {
 						if (!unlink($image)) {
-							log::add('mobile', 'error', 'Erreur lors de la suppression de: ' . $image);
+							log::add('mobile', 'error', 'Erreur lors de la suppression de : ' . $image);
 						} else {
 							log::add('mobile', 'debug', '| ─▶︎ :fg-danger:suppression image:/fg: > ' . $image);
 						}
@@ -1885,7 +1911,7 @@ class mobileCmd extends cmd
 			switch ($valueUser) {
 				case 1:
 					file_put_contents($filePath, '');
-					log::add('mobile', 'info', '| Suppression des notifications effectuée');
+					log::add('mobile', 'info', '| Suppression des notifications réalisée');
 					break;
 				case 2:
 					$notifs = json_decode(file_get_contents($filePath), true);
@@ -1897,7 +1923,7 @@ class mobileCmd extends cmd
 						return $notif['data']['askVariable'] == 'rien' || ($currentTime - $notifTime) < $timeout;
 					});
 					file_put_contents($filePath, json_encode($notifs));
-					log::add('mobile', 'info', '| Suppression des asks expirés effectuée');
+					log::add('mobile', 'info', '| Suppression des asks expirés réalisée');
 					break;
 				case 3:
 					$notifs = json_decode(file_get_contents($filePath), true);
@@ -1905,7 +1931,7 @@ class mobileCmd extends cmd
 						return !isset($notif['data']['choiceAsk']) || $notif['data']['choiceAsk'] == '';
 					});
 					file_put_contents($filePath, json_encode($notifs));
-					log::add('mobile', 'info', '| Suppression des asks répondus effectuée');
+					log::add('mobile', 'info', '| Suppression des asks répondus réalisée');
 					break;
 			}
 

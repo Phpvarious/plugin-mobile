@@ -36,7 +36,12 @@ if ($params['Iq']) {
 		//createMobile($params, 3);
 		log::add('mobile', 'debug', '| [WARNING] mobile non detecté !');
 	} else {
-		log::add('mobile', 'debug', '| Mobile demandeur  ' . mobile::whoIsIq($params['Iq']));
+		log::add('mobile', 'debug', '| Mobile demandeur : ' . mobile::whoIsIq($params['Iq']));
+		// Update des autres commandes ─▶︎ A FINALISER 
+		//if (isset($params['transmition'])) {
+		//	$mobile = eqLogic::byLogicalId($params['Iq'], 'mobile');
+		//	$mobile->cmdForSpecificChannel($params, 'transmition');
+		//}
 	}
 } else {
 	log::add('mobile', 'debug', '| [WARNING] Paramètre Iq inexistant !');
