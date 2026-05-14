@@ -4,10 +4,15 @@
 >
 > Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte
 
-# xx/07/2025
 
-- Intégration Application V1 
 
+# 11/05/2026
+
+  ### Géofencing
+  - Correction : un même événement ENTER/EXIT n'est plus traité plusieurs fois en cas d'envoi dupliqué par
+  l'app
+  - Correction : les événements géofence trop anciens (> 30 min) sont ignorés pour éviter de déclencher des
+  scénarios hors contexte
 
 # 08/07/2025
 
