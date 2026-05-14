@@ -518,11 +518,6 @@ if ($jsonrpc->getMethod() == 'getAskResponse') {
  * 
  * @return makeSuccess
  */
-if ($jsonrpc->getMethod() == 'saveMobile') {
-	log::add('mobile', 'debug', 'Demande de sauvegarde ' . $params['type'] . ' ─▶︎ ' . $params['Iq'] . ' ─▶︎ ' . mobile::whoIsIq($params['Iq']));
-	mobile::makeSaveJson($params['Iq'], $params['Json'], $params['type']);
-	$jsonrpc->makeSuccess();
-}
 
 /**
  * save event coming from geofencing and methodeForSpecificChannel
