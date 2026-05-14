@@ -1540,7 +1540,7 @@ class mobile extends eqLogic
 							$cmd->setIsVisible(0);
 							$cmd->setOrder($order);
 							$order++;
-							log::add('mobile', 'debug', 'Creation de la commande Batterie du téléphone');
+							log::add('mobile', 'debug', '| Création de la commande Batterie du téléphone');
 						}
 						if (is_object($cmd)) {
 							$cmd->setEqLogic_id($this->getId());
@@ -1572,7 +1572,7 @@ class mobile extends eqLogic
 							$cmd->setIsVisible(0);
 							$cmd->setOrder($order);
 							$order++;
-							log::add('mobile', 'debug', 'Creation de la commande En charge');
+							log::add('mobile', 'debug', '| Création de la commande En charge');
 						}
 						if (is_object($cmd)) {
 							$cmd->setEqLogic_id($this->getId());
@@ -1601,7 +1601,7 @@ class mobile extends eqLogic
 							$cmd->setIsVisible(0);
 							$cmd->setOrder($order);
 							$order++;
-							log::add('mobile', 'debug', 'Creation de la commande Coordonnées');
+							log::add('mobile', 'debug', '| Création de la commande Coordonnées');
 						}
 						if (is_object($cmd)) {
 							$cmd->setEqLogic_id($this->getId());
@@ -1628,7 +1628,7 @@ class mobile extends eqLogic
 							$cmd->setUnite('m');
 							$cmd->setOrder($order);
 							$order++;
-							log::add('mobile', 'debug', 'Creation de la commande Altitude');
+							log::add('mobile', 'debug', '| Création de la commande Altitude');
 						}
 						if (is_object($cmd)) {
 							$cmd->setEqLogic_id($this->getId());
