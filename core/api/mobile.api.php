@@ -37,11 +37,6 @@ if ($params['Iq']) {
 		log::add('mobile', 'debug', '| [WARNING] mobile non detecté !');
 	} else {
 		log::add('mobile', 'debug', '| Mobile demandeur : ' . mobile::whoIsIq($params['Iq']));
-		// Update des autres commandes (Actualisation quand on rentre dans le menu Géolocalisation de l'APP)
-		if (isset($params['transmition'])) {
-			$mobile = eqLogic::byLogicalId($params['Iq'], 'mobile');
-			$mobile->cmdForSpecificChannel($params, 'transmition', false);
-		}
 	}
 } else {
 	log::add('mobile', 'debug', '| [WARNING] Paramètre Iq inexistant !');
