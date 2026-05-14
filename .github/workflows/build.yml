@@ -3,7 +3,7 @@ name: PHP-Check
 on:
   push:
     branches:
-      - beta
+      - manage_notificationV2
 
 jobs:
   build:
