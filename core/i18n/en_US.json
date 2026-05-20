@@ -1,144 +1,195 @@
 {
-    "plugins\/mobile\/plugin_info\/configuration.php": {
-        "Notifications de l'app": "App notifications",
-        "Réponse Ask sensible à la case : ": "Ask answer sensitive to the box:"
+    "plugins\/mobile\/core\/ajax\/mobile.ajax.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access",
+        "Aucune methode correspondante à : ": "No method corresponding to:",
+        "Equipement non trouvé : ": "Equipment not found:",
+        "User inexistant : ": "Non-existent user:"
+    },
+    "plugins\/mobile\/core\/api\/mobile.api.php": {
+        "Aucun": "None",
+        "Aucune demande": "No request",
+        "Cmd inconnu : ": "Unknown Cmd:",
+        "EqLogic inconnu : ": "Unknown EqLogic:",
+        "JSONRPC object not defined": "JSONRPC object not defined"
+    },
+    "plugins\/mobile\/core\/class\/mobile.class.php": {
+        "Accueil": "Home",
+        "Altitude": "Altitude",
+        "Batterie du téléphone": "Phone battery",
+        "Coordonnées": "Contact details",
+        "En charge": "In charge",
+        "Les quotas pour fcm sont dépassés. Le maximum autorisé est de 5 requêtes par minute.": "Quotas for fcm are exceeded. The maximum allowed is 5 requests per minute",
+        "Notification": "Notification",
+        "Notification Critique": "Critical Notification",
+        "Notification Silencieuse": "Notification Silencieuse",
+        "Récupérer les informations du téléphone": "Retrieve phone information",
+        "Supprimer les Asks expirés": "Delete Expired Asks",
+        "Supprimer les Asks répondus": "Delete answered Asks",
+        "Supprimer les Notifications": "Delete Notifications",
+        "Supprimer toutes les Notifications": "Delete All Notifications"
+    },
+    "plugins\/mobile\/core\/template\/mobile\/cmd.action.slider.sliderAppV2.html": {
+        "Affiche durée ou date de la valeur": "Displays duration or date of the value",
+        "Couleur de l'indicateur de valeur": "Value indicator color",
+        "Date de collecte": "Date of collection",
+        "Date de valeur": "Value date",
+        "Inverse la position de l'indicateur de valeur": "Reverses the position of the value indicator",
+        "Pas du changement de valeur": "No change in value"
+    },
+    "plugins\/mobile\/core\/template\/mobile\/cmd.action.slider.verticalSlider.html": {
+        "Affiche durée ou date de la valeur": "Displays duration or date of the value",
+        "Couleur de l'indicateur de valeur": "Value indicator color",
+        "Date de collecte": "Date of collection",
+        "Date de valeur": "Value date",
+        "Inverse la position de l'indicateur de valeur": "Reverses the position of the value indicator",
+        "Pas du changement de valeur": "No change in value"
+    },
+    "plugins\/mobile\/desktop\/js\/mobile.js": {
+        "Afficher": "Display",
+        "Choisir une icône": "Choose an icon",
+        "Configuration avancée": "Advanced configuration",
+        "Gestion des Mobiles": "Mobile Management",
+        "Historiser": "Historize",
+        "Max": "Maximum",
+        "Min": "Minimum",
+        "Nom de la commande": "Command name",
+        "Notification": "Notification",
+        "QrCode": "QrCode",
+        "Supprimer": "Delete",
+        "Supprimer la commande": "Delete order",
+        "Tester": "Test",
+        "Timeout": "Timeout",
+        "Unité": "Unit"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Info.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access",
+        "Commandes": "Commands",
+        "Designs": "Designs",
+        "Messages": "Message",
+        "Scénarios": "Scenarios"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Object.mobile.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access",
+        "Activer": "Activate",
+        "Aucun": "None",
+        "Icône": "Icon",
+        "Modifications sauvegardées avec succès": "Changes successfully saved",
+        "Sauvegarde effectuée avec succès": "Successfully saved",
+        "Sauvegarder": "Save",
+        "Type Générique": "Generic Type"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Piece.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Plugin.mobile.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access",
+        "Activer": "Activate",
+        "Aucun": "None",
+        "Icône": "Icon",
+        "Modifications sauvegardées avec succès": "Changes successfully saved",
+        "Sauvegarde effectuée": "Backup completed",
+        "Sauvegarder": "Save",
+        "Type Générique": "Generic Type"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Plugin.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Scenario.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access",
+        "Actions": "Shares",
+        "ID": "ID",
+        "Sauvegarder": "Save",
+        "Scénario": "Scenario",
+        "Scénarios": "Scenarios"
     },
     "plugins\/mobile\/desktop\/modal\/menuCustom.php": {
         "401 - Accès non autorisé": "401 - Unauthorized Access",
-        "Équipement": "Equipment",
+        "APPLICATION V2 NON INTALLÉE": "APPLICATION V2 NOT INSTALLED",
+        "Choisir Menu": "Choose Menu",
+        "Configuration Menu Enregistrée": "Saved Menu Configuration",
+        "Dernière activité": "Last activity",
+        "Menu Défaut": "Default menu",
+        "Menu par défaut": "Default menu",
         "Type de Mobile": "Mobile Type",
         "Utilisateur": "User",
-        "Menu Défaut": "Default menu",
-        "Dernière activité": "Last activity",
-        "Choisir Menu": "Choose Menu",
-        "Menu par défaut": "Default menu",
-        "APPLICATION V2 NON INTALLÉE": "APPLICATION V2 NOT INSTALLED",
         "Utilisateur non trouvé": "User not found",
-        "Configuration Menu Enregistrée": "Saved Menu Configuration"
+        "Équipement": "Equipment"
     },
     "plugins\/mobile\/desktop\/modal\/qrcodev2.php": {
         "AJOUT DE LA BOX SUR VOTRE APPLICATiON MOBILE ": "ADDING THE BOX TO YOUR MOBILE APP",
-        "Vous pouvez choisir un utilisateur : un QRCode sera généré. Vous pourrez ensuite scanner le QRCode depuis la nouvelle application, et ainsi ajouter cette box à votre application": "You can choose a user: a QRCode will be generated. You can then scan the QRCode from the new application, and thus add this box to your application",
-        "Utilisateur": "User",
         "Aucun": "None",
-        "QRCode": "QRCode",
-        "Erreur Pas d\\'adresse interne (voir configuration de votre Jeedom !)": "Error No internal address (see configuration of your Jeedom!)",
         "Erreur Pas d\\'adresse externe (voir configuration de votre Jeedom !)": "Error No external address (see configuration of your Jeedom!)",
-        "Erreur Pas d\\'utilisateur selectionné": "Error No user selected"
+        "Erreur Pas d\\'adresse interne (voir configuration de votre Jeedom !)": "Error No internal address (see configuration of your Jeedom!)",
+        "Erreur Pas d\\'utilisateur selectionné": "Error No user selected",
+        "QRCode": "QRCode",
+        "Utilisateur": "User",
+        "Vous pouvez choisir un utilisateur : un QRCode sera généré. Vous pourrez ensuite scanner le QRCode depuis la nouvelle application, et ainsi ajouter cette box à votre application": "You can choose a user: a QRCode will be generated. You can then scan the QRCode from the new application, and thus add this box to your application"
+    },
+    "plugins\/mobile\/desktop\/php\/mobile.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access",
+        "Actions": "Shares",
+        "Activer": "Activate",
+        "Ajouter": "Add",
+        "App V1": "App V1",
+        "Aucun": "None",
+        "Catégorie": "Category",
+        "Commandes": "Commands",
+        "Configuration": "Setup",
+        "Configuration avancée": "Advanced configuration",
+        "Documentation": "Documentation",
+        "Gestion Mobiles": "Mobile Management",
+        "Informations": "Information",
+        "Iq Mobile": "Iq Mobile",
+        "Mes Téléphones Mobiles": "My Mobile Phones",
+        "Mobile": "Mobile",
+        "NFC : Envoi direct": "NFC : Envoi direct",
+        "Nom": "Name",
+        "Nom de l'équipement": "Equipment Name",
+        "Non": "Non",
+        "Notifications": "Notifications",
+        "Objet parent": "Parent object",
+        "Options": "Options",
+        "Oui": "Oui",
+        "Paramètres généraux": "General settings",
+        "Paramètres spécifiques": "Specific settings",
+        "Plugins": "Plugins",
+        "Pour ajouter un téléphone, il y a 2 méthodes possible :": "To add a phone, there are 2 possible methods:",
+        "QR Code": "QR Code",
+        "QRCode": "QRCode",
+        "Rechercher": "Search",
+        "Sauvegarder": "Save",
+        "Scénarios": "Scenarios",
+        "Supprimer": "Delete",
+        "Sur le premier écran de l\\'application, il vous est proposé de connecter votre compte market, et ainsi de retrouver toutes les boxs associées à ce compte, ou bien simplement ajouter une box.": "On the first screen of the application, you are offered to connect your market account, and thus find all the boxes associated with this account, or simply add a box",
+        "Type": "Type",
+        "Type de Mobile": "Mobile Type",
+        "Utilisateur": "User",
+        "Valeur": "Value",
+        "Verrouiller le menu custom": "Lock the custom menu",
+        "Verrouiller le menu géolocalisation": "Lock the geolocation menu",
+        "Visible": "Visible",
+        "Équipement non visible": "Equipment not visible",
+        "Équipement visible": "Visible equipment"
+    },
+    "plugins\/mobile\/desktop\/php\/panelWebApp.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access"
     },
     "plugins\/mobile\/desktop\/php\/widgetLight.php": {
         "401 - Accès non autorisé": "401 - Unauthorized Access"
-    },
-    "plugins\/mobile\/desktop\/php\/mobile.php": {
-        "401 - Accès non autorisé": "401 - Unauthorized access",
-        "App V2 - (VERSION BETA SEULEMENT)": "App V2 - (BETA VERSION ONLY)",
-        "Configuration": "Setup",
-        "Gestion Mobiles": "Mobile Management",
-        "QR Code": "QR Code",
-        "Mes Téléphones Mobiles": "My Mobile Phones",
-        "Rechercher": "Search",
-        "Équipement visible": "Visible equipment",
-        "Équipement non visible": "Equipment not visible",
-        "Pour ajouter un téléphone, il y a 2 méthodes possible :": "To add a phone, there are 2 possible methods:",
-        "Sur le premier écran de l\\'application, il vous est proposé de connecter votre compte market, et ainsi de retrouver toutes les boxs associées à ce compte, ou bien simplement ajouter une box.": "On the first screen of the application, you are offered to connect your market account, and thus find all the boxes associated with this account, or simply add a box",
-        "App V1": "App V1",
-        "Attention, en beta il n'est plus possible d'utiliser l'APP V1": "Please note, in beta it is no longer possible to use APP V1",
-        "Configuration avancée": "Advanced configuration",
-        "Sauvegarder": "Save",
-        "Supprimer": "Delete",
-        "Mobile": "Mobile",
-        "Commandes": "Commands",
-        "Paramètres généraux": "General settings",
-        "Nom de l'équipement": "Equipment Name",
-        "Objet parent": "Parent object",
-        "Aucun": "None",
-        "Catégorie": "Category",
-        "Options": "Options",
-        "Activer": "Activate",
-        "Visible": "Visible",
-        "Paramètres spécifiques": "Specific settings",
-        "Verrouiller le menu géolocalisation": "Lock the geolocation menu",
-        "Verrouiller le menu custom": "Lock the custom menu",
-        "NFC : Envoi direct": "NFC : Envoi direct",
-        "Non": "Non",
-        "Oui": "Oui",
-        "Informations": "Information",
-        "Type de Mobile": "Mobile Type",
-        "Utilisateur": "User",
-        "Iq Mobile": "Iq Mobile",
-        "TOKEN Mobile": "TOKEN Mobile",
-        "Nom": "Name",
-        "Type": "Type",
-        "Valeur": "Value",
-        "Actions": "Shares"
     },
     "plugins\/mobile\/desktop\/php\/widgetSlider.php": {
         "401 - Accès non autorisé": "401 - Unauthorized Access",
         "ERREUR SUR LA COMMANDE": "ORDER ERROR"
     },
-    "plugins\/mobile\/desktop\/php\/panelWebApp.php": {
-        "401 - Accès non autorisé": "401 - Unauthorized Access"
-    },
     "plugins\/mobile\/desktop\/php\/widgetThermo.php": {
         "401 - Accès non autorisé": "401 - Unauthorized Access",
         "Température": "Temperature"
     },
-    "plugins\/mobile\/desktop\/js\/mobile.js": {
-        "Informations envoyées à l'app": "Information sent to the app",
-        "Gestion des Mobiles": "Mobile Management",
-        "QrCode": "QrCode",
-        "Nom de la commande": "Command name",
-        "Choisir une icône": "Choose an icon",
-        "Afficher": "Display",
-        "Historiser": "Historize",
-        "Min": "Minimum",
-        "Max": "Maximum",
-        "Unité": "Unit",
-        "Configuration avancée": "Advanced configuration",
-        "Tester": "Test",
-        "Supprimer la commande": "Delete order"
+    "plugins\/mobile\/desktop\/php\/wizard.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized Access"
     },
-    "plugins\/mobile\/core\/ajax\/mobile.ajax.php": {
-        "401 - Accès non autorisé": "401 - Unauthorized access",
-        "Equipement non trouvé : ": "Equipment not found:",
-        "User inexistant : ": "Non-existent user:",
-        "Aucune methode correspondante à : ": "No method corresponding to:"
-    },
-    "plugins\/mobile\/core\/class\/mobile.class.php": {
-        "Les quotas pour fcm sont dépassés. Le maximum autorisé est de 5 requêtes par minute.": "Quotas for fcm are exceeded. The maximum allowed is 5 requests per minute",
-        "Echec de l\\'envoi de la notification :": "Failed to send notification:",
-        "Échec de l'envoi de notification : la version 1 de l'app n'est plus prise en charge !": "Failed to send notification: App version 1 is no longer supported!",
-        "Batterie du téléphone": "Phone battery",
-        "En charge": "In charge",
-        "Coordonnées": "Contact details",
-        "Notification": "Notification",
-        "Notification Critique": "Critical Notification",
-        "Notification Silencieuse": "Notification Silencieuse",
-        "Récupérer les informations du téléphone": "Retrieve phone information",
-        "Supprimer les Notifications": "Delete Notifications",
-        "Supprimer toutes les Notifications": "Delete All Notifications",
-        "Supprimer les Asks expirés": "Delete Expired Asks",
-        "Supprimer les Asks répondus": "Delete answered Asks"
-    },
-    "plugins\/mobile\/core\/template\/widgets.html": {
-        "Couleur de l'indicateur de valeur": "Value indicator color",
-        "Pas du changement de valeur": "No change in value",
-        "Inverse la position de l'indicateur de valeur": "Reverses the position of the value indicator",
-        "Affiche durée ou date de la valeur": "Displays duration or date of the value",
-        "Date de valeur": "Value date",
-        "Date de collecte": "Date of collection"
-    },
-    "plugins\/mobile\/core\/api\/mobile.api.php": {
-        "JSONRPC object not defined": "JSONRPC object not defined",
-        "EqLogic inconnu : ": "Unknown EqLogic:",
-        "Cmd inconnu : ": "Unknown Cmd:",
-        "| [ERROR] EqLogic inconnu : ": "| [ERROR] Unknown EqLogic:",
-        "| Pas de paramètre de geofencing": "| No geofencing settings",
-        "| [ERROR] Paramètre Iq inexistant !": "| [ERROR] Iq parameter does not exist!",
-        "Aucune demande": "No request",
-        "Aucun": "None"
-    },
-    "info.json": {
-        "Attention : la version BETA ne supporte plus l'app V1, elle est réservée à la nouvelle app V2 (beta actuellement). Nécessite Android14 ou IOS 12.4 minimum.<br\/><br\/>Attention, l'app v1 n'est pas compatible avec le dernier Android. L'application officielle Jeedom permet le pilotage de votre système domotique Jeedom, que ce soit en Wifi local, ou sur le réseau 3G\/4G de votre opérateur.<br\/><br\/>L'app se connecte automatiquement à votre Jeedom avec une initialisation automatique par QRcode, aucune configuration n'est nécessaire. (possibilité de le faire manuellement)<br\/>Vous retrouverez sur votre mobile toutes les fonctionnalités de votre Jeedom.<br\/>Vous pourrez personnaliser votre application avec des raccourcis et plus encore...<br\/><br\/>Fonctionnalités actuelles:<br\/>- Gestion de vos scénarios.<br\/>- Gestion de votre domotique en fonction de vos pièces et équipements.<br\/>- Maj et retour d'état automatique<br\/>- Compatibilité aves les plugins, tel que thermostat, alarme, caméra etc...<br\/>- Interface personnalisable avec les raccourcis.<br\/>- Résumé domotique général et par pièce<br\/>- Notifications (avec prise en charge du ASK)<br\/>- Affichage des Designs <br\/><br\/>D'autres fonctionnalités et compatibilités sont à venir dans les prochaines mises à jour !<br\/><br\/>Respect de la vie privée.<br\/>Aucune donnée (domotique ou personnelle) n'est stockée ou conservée sur nos serveurs.": "Warning: the BETA version no longer supports the V1 app, it is reserved for the new V2 app (currently beta). Requires Android14 or IOS 12.4 minimum.<br\/><br\/> Please note that the v1 app is not compatible with the latest Android. The official Jeedom application allows you to control your Jeedom home automation system, whether in local WiFi, or on your operator's 3G\/4G network.<br\/><br\/> The app automatically connects to your Jeedom with automatic initialization by QRcode, no configuration is necessary. (possibility to do it manually)<br\/> You will find all the features of your Jeedom on your mobile.<br\/> You will be able to customize your application with shortcuts and more...<br\/><br\/> Current features:<br\/> - Management of your scenarios.<br\/> - Management of your home automation based on your rooms and equipment.<br\/> - Automatic shift and return to state<br\/> - Compatibility with plugins, such as thermostat, alarm, camera etc...<br\/> - Customizable interface with shortcuts.<br\/> - General and room-by-room home automation summary<br\/> - Notifications (with ASK support)<br\/> - Displaying Designs<br\/><br\/> More features and compatibilities are coming in future updates!<br\/><br\/> Respect for privacy.<br\/> No data (home automation or personal) is stored or kept on our servers"
+    "plugins\/mobile\/plugin_info\/configuration.php": {
+        "Notifications de l'app": "App notifications",
+        "Réponse Ask sensible à la case : ": "Ask answer sensitive to the box:"
     }
 }
