@@ -1,144 +1,195 @@
 {
-    "plugins\/mobile\/plugin_info\/configuration.php": {
-        "Notifications de l'app": "Notificações de aplicativos",
-        "Réponse Ask sensible à la case : ": "Peça resposta sensível à caixa:"
+    "plugins\/mobile\/core\/ajax\/mobile.ajax.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à :",
+        "Equipement non trouvé : ": "Equipamento não encontrado:",
+        "User inexistant : ": "Usuário inexistente:"
+    },
+    "plugins\/mobile\/core\/api\/mobile.api.php": {
+        "Aucun": "Nenhum",
+        "Aucune demande": "Nenhum pedido",
+        "Cmd inconnu : ": "Cmd desconhecido:",
+        "EqLogic inconnu : ": "EqLogic desconhecido:",
+        "JSONRPC object not defined": "Objeto JSONRPC não definido"
+    },
+    "plugins\/mobile\/core\/class\/mobile.class.php": {
+        "Accueil": "Início",
+        "Altitude": "Altitude",
+        "Batterie du téléphone": "Bateria do telefone",
+        "Coordonnées": "Detalhes de contato",
+        "En charge": "Responsável",
+        "Les quotas pour fcm sont dépassés. Le maximum autorisé est de 5 requêtes par minute.": "As cotas para FCM foram excedidas. O máximo permitido são 5 solicitações por minuto",
+        "Notification": "Notificação",
+        "Notification Critique": "Notificação Crítica",
+        "Notification Silencieuse": "Notification Silencieuse",
+        "Récupérer les informations du téléphone": "Recuperar informações do telefone",
+        "Supprimer les Asks expirés": "Excluir perguntas expiradas",
+        "Supprimer les Asks répondus": "Excluir perguntas respondidas",
+        "Supprimer les Notifications": "Excluir notificações",
+        "Supprimer toutes les Notifications": "Excluir todas as notificações"
+    },
+    "plugins\/mobile\/core\/template\/mobile\/cmd.action.slider.sliderAppV2.html": {
+        "Affiche durée ou date de la valeur": "Exibe a duração ou data do valor",
+        "Couleur de l'indicateur de valeur": "Cor do indicador de valor",
+        "Date de collecte": "Data de coleta",
+        "Date de valeur": "Data de validade",
+        "Inverse la position de l'indicateur de valeur": "Inverte a posição do indicador de valor",
+        "Pas du changement de valeur": "Sem alteração no valor"
+    },
+    "plugins\/mobile\/core\/template\/mobile\/cmd.action.slider.verticalSlider.html": {
+        "Affiche durée ou date de la valeur": "Exibe a duração ou data do valor",
+        "Couleur de l'indicateur de valeur": "Cor do indicador de valor",
+        "Date de collecte": "Data de coleta",
+        "Date de valeur": "Data de validade",
+        "Inverse la position de l'indicateur de valeur": "Inverte a posição do indicador de valor",
+        "Pas du changement de valeur": "Sem alteração no valor"
+    },
+    "plugins\/mobile\/desktop\/js\/mobile.js": {
+        "Afficher": "Mostrar",
+        "Choisir une icône": "Escolha um ícone",
+        "Configuration avancée": "Configuração avançada",
+        "Gestion des Mobiles": "Gerenciamento móvel",
+        "Historiser": "Historicizar",
+        "Max": "Máx.",
+        "Min": "Mínimo",
+        "Nom de la commande": "Nome do comando",
+        "Notification": "Notificação",
+        "QrCode": "Código QR",
+        "Supprimer": "Remover",
+        "Supprimer la commande": "Excluir pedido",
+        "Tester": "Teste",
+        "Timeout": "Tempo limite",
+        "Unité": "Unidade"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Info.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Commandes": "Comandos",
+        "Designs": "Desenhos",
+        "Messages": "Mensagens",
+        "Scénarios": "Cenários"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Object.mobile.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Activer": "Ativar",
+        "Aucun": "Nenhum",
+        "Icône": "Ícone",
+        "Modifications sauvegardées avec succès": "Alterações guardadas com sucesso",
+        "Sauvegarde effectuée avec succès": "Backup concluído com êxito",
+        "Sauvegarder": "Salvar",
+        "Type Générique": "Tipo Genérico"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Piece.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Plugin.mobile.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Activer": "Ativar",
+        "Aucun": "Nenhum",
+        "Icône": "Ícone",
+        "Modifications sauvegardées avec succès": "Alterações guardadas com sucesso",
+        "Sauvegarde effectuée": "Backup feito",
+        "Sauvegarder": "Salvar",
+        "Type Générique": "Tipo Genérico"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Plugin.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado"
+    },
+    "plugins\/mobile\/desktop\/modal\/AppV1Scenario.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado",
+        "Actions": "Ações",
+        "ID": "EU IRIA",
+        "Sauvegarder": "Salvar",
+        "Scénario": "Cenário",
+        "Scénarios": "Cenários"
     },
     "plugins\/mobile\/desktop\/modal\/menuCustom.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
-        "Équipement": "Equipamento",
+        "APPLICATION V2 NON INTALLÉE": "APLICATIVO V2 NÃO INSTALADO",
+        "Choisir Menu": "Escolha o cardápio",
+        "Configuration Menu Enregistrée": "Configuração de menu salva",
+        "Dernière activité": "Ultima atividade",
+        "Menu Défaut": "Menu padrão",
+        "Menu par défaut": "Menu padrão",
         "Type de Mobile": "Tipo de celular",
         "Utilisateur": "Do utilizador",
-        "Menu Défaut": "Menu padrão",
-        "Dernière activité": "Ultima atividade",
-        "Choisir Menu": "Escolha o cardápio",
-        "Menu par défaut": "Menu padrão",
-        "APPLICATION V2 NON INTALLÉE": "APLICATIVO V2 NÃO INSTALADO",
         "Utilisateur non trouvé": "Usuário não encontrado",
-        "Configuration Menu Enregistrée": "Configuração de menu salva"
+        "Équipement": "Equipamento"
     },
     "plugins\/mobile\/desktop\/modal\/qrcodev2.php": {
         "AJOUT DE LA BOX SUR VOTRE APPLICATiON MOBILE ": "ADICIONANDO A CAIXA AO SEU APLICATIVO MÓVEL",
-        "Vous pouvez choisir un utilisateur : un QRCode sera généré. Vous pourrez ensuite scanner le QRCode depuis la nouvelle application, et ainsi ajouter cette box à votre application": "Você pode escolher um usuário: um QRCode será gerado. Você pode então escanear o QRCode do novo aplicativo, e assim adicionar esta caixa ao seu aplicativo",
-        "Utilisateur": "Do utilizador",
         "Aucun": "Nenhum",
-        "QRCode": "Código QR",
-        "Erreur Pas d\\'adresse interne (voir configuration de votre Jeedom !)": "Erro Sem endereço interno (veja a configuração do seu Jeedom!)",
         "Erreur Pas d\\'adresse externe (voir configuration de votre Jeedom !)": "Erro Sem endereço externo (veja a configuração do seu Jeedom!)",
-        "Erreur Pas d\\'utilisateur selectionné": "Erro Nenhum usuário selecionado"
-    },
-    "plugins\/mobile\/desktop\/php\/widgetLight.php": {
-        "401 - Accès non autorisé": "401 - Acesso não autorizado"
+        "Erreur Pas d\\'adresse interne (voir configuration de votre Jeedom !)": "Erro Sem endereço interno (veja a configuração do seu Jeedom!)",
+        "Erreur Pas d\\'utilisateur selectionné": "Erro Nenhum usuário selecionado",
+        "QRCode": "Código QR",
+        "Utilisateur": "Do utilizador",
+        "Vous pouvez choisir un utilisateur : un QRCode sera généré. Vous pourrez ensuite scanner le QRCode depuis la nouvelle application, et ainsi ajouter cette box à votre application": "Você pode escolher um usuário: um QRCode será gerado. Você pode então escanear o QRCode do novo aplicativo, e assim adicionar esta caixa ao seu aplicativo"
     },
     "plugins\/mobile\/desktop\/php\/mobile.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
-        "App V2 - (VERSION BETA SEULEMENT)": "Aplicativo V2 - (SOMENTE VERSÃO BETA)",
-        "Configuration": "Configuração",
-        "Gestion Mobiles": "Gerenciamento móvel",
-        "QR Code": "Código QR",
-        "Mes Téléphones Mobiles": "Meus telefones móveis",
-        "Rechercher": "Pesquisa",
-        "Équipement visible": "Equipamento visível",
-        "Équipement non visible": "Equipamento não visível",
-        "Pour ajouter un téléphone, il y a 2 méthodes possible :": "Para adicionar um telefone, existem 2 métodos possíveis:",
-        "Sur le premier écran de l\\'application, il vous est proposé de connecter votre compte market, et ainsi de retrouver toutes les boxs associées à ce compte, ou bien simplement ajouter une box.": "Na primeira tela do aplicativo, você será solicitado a conectar sua conta de mercado, e assim encontrar todas as caixas associadas a esta conta, ou simplesmente adicionar uma caixa",
-        "App V1": "Aplicativo V1",
-        "Attention, en beta il n'est plus possible d'utiliser l'APP V1": "Observe que em beta não é mais possível usar o APP V1",
-        "Configuration avancée": "Configuração avançada",
-        "Sauvegarder": "Salvar",
-        "Supprimer": "Remover",
-        "Mobile": "Móvel",
-        "Commandes": "Comandos",
-        "Paramètres généraux": "Configurações Gerais",
-        "Nom de l'équipement": "Nome do equipamento",
-        "Objet parent": "Objeto pai",
-        "Aucun": "Nemhum",
-        "Catégorie": "Categoria",
-        "Options": "Opções",
+        "Actions": "Ações",
         "Activer": "Ativar",
-        "Visible": "Visivél",
-        "Paramètres spécifiques": "Configurações específicas",
-        "Verrouiller le menu géolocalisation": "Bloquear menu de geolocalização",
-        "Verrouiller le menu custom": "Bloquear menu personalizado",
-        "NFC : Envoi direct": "NFC : Envoi direct",
-        "Non": "Non",
-        "Oui": "Oui",
+        "Ajouter": "Adicionar",
+        "App V1": "Aplicativo V1",
+        "Aucun": "Nenhum",
+        "Catégorie": "Categoria",
+        "Commandes": "Comandos",
+        "Configuration": "Configuração",
+        "Configuration avancée": "Configuração avançada",
+        "Documentation": "Documentação",
+        "Gestion Mobiles": "Gerenciamento móvel",
         "Informations": "Informação",
+        "Iq Mobile": "QI Móvel",
+        "Mes Téléphones Mobiles": "Meus telefones móveis",
+        "Mobile": "Móvel",
+        "NFC : Envoi direct": "NFC : Envoi direct",
+        "Nom": "Nome",
+        "Nom de l'équipement": "Nome do equipamento",
+        "Non": "Non",
+        "Notifications": "Notificações",
+        "Objet parent": "Objeto pai",
+        "Options": "Opções",
+        "Oui": "Oui",
+        "Paramètres généraux": "Configurações Gerais",
+        "Paramètres spécifiques": "Configurações específicas",
+        "Plugins": "Plug-ins",
+        "Pour ajouter un téléphone, il y a 2 méthodes possible :": "Para adicionar um telefone, existem 2 métodos possíveis:",
+        "QR Code": "Código QR",
+        "QRCode": "Código QR",
+        "Rechercher": "Pesquisa",
+        "Sauvegarder": "Salvar",
+        "Scénarios": "Cenários",
+        "Supprimer": "Remover",
+        "Sur le premier écran de l\\'application, il vous est proposé de connecter votre compte market, et ainsi de retrouver toutes les boxs associées à ce compte, ou bien simplement ajouter une box.": "Na primeira tela do aplicativo, você será solicitado a conectar sua conta de mercado, e assim encontrar todas as caixas associadas a esta conta, ou simplesmente adicionar uma caixa",
+        "Type": "Tipo",
         "Type de Mobile": "Tipo de celular",
         "Utilisateur": "Do utilizador",
-        "Iq Mobile": "QI Móvel",
-        "TOKEN Mobile": "TOKEN Móvel",
-        "Nom": "Nome",
-        "Type": "Tipo",
         "Valeur": "Valor",
-        "Actions": "Ações"
+        "Verrouiller le menu custom": "Bloquear menu personalizado",
+        "Verrouiller le menu géolocalisation": "Bloquear menu de geolocalização",
+        "Visible": "Visivél",
+        "Équipement non visible": "Equipamento não visível",
+        "Équipement visible": "Equipamento visível"
+    },
+    "plugins\/mobile\/desktop\/php\/panelWebApp.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado"
+    },
+    "plugins\/mobile\/desktop\/php\/widgetLight.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado"
     },
     "plugins\/mobile\/desktop\/php\/widgetSlider.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
         "ERREUR SUR LA COMMANDE": "ERRO DE ORDEM"
     },
-    "plugins\/mobile\/desktop\/php\/panelWebApp.php": {
-        "401 - Accès non autorisé": "401 - Acesso não autorizado"
-    },
     "plugins\/mobile\/desktop\/php\/widgetThermo.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
         "Température": "Temperatura"
     },
-    "plugins\/mobile\/desktop\/js\/mobile.js": {
-        "Informations envoyées à l'app": "Informações enviadas para o aplicativo",
-        "Gestion des Mobiles": "Gerenciamento móvel",
-        "QrCode": "Código QR",
-        "Nom de la commande": "Nome do comando",
-        "Choisir une icône": "Escolha um ícone",
-        "Afficher": "Mostrar",
-        "Historiser": "Historicizar",
-        "Min": "Mínimo",
-        "Max": "Máx.",
-        "Unité": "Unidade",
-        "Configuration avancée": "Configuração avançada",
-        "Tester": "Teste",
-        "Supprimer la commande": "Excluir pedido"
+    "plugins\/mobile\/desktop\/php\/wizard.php": {
+        "401 - Accès non autorisé": "401 - Acesso não autorizado"
     },
-    "plugins\/mobile\/core\/ajax\/mobile.ajax.php": {
-        "401 - Accès non autorisé": "401 - Acesso não autorizado",
-        "Equipement non trouvé : ": "Equipamento não encontrado:",
-        "User inexistant : ": "Usuário inexistente:",
-        "Aucune methode correspondante à : ": "Aucune methode correspondante à :"
-    },
-    "plugins\/mobile\/core\/class\/mobile.class.php": {
-        "Les quotas pour fcm sont dépassés. Le maximum autorisé est de 5 requêtes par minute.": "As cotas para FCM foram excedidas. O máximo permitido são 5 solicitações por minuto",
-        "Echec de l\\'envoi de la notification :": "Falha ao enviar notificação:",
-        "Échec de l'envoi de notification : la version 1 de l'app n'est plus prise en charge !": "Falha ao enviar notificação: a versão 1 do aplicativo não é mais compatível!",
-        "Batterie du téléphone": "Bateria do telefone",
-        "En charge": "Responsável",
-        "Coordonnées": "Detalhes de contato",
-        "Notification": "Notificação",
-        "Notification Critique": "Notificação Crítica",
-        "Notification Silencieuse": "Notification Silencieuse",
-        "Récupérer les informations du téléphone": "Recuperar informações do telefone",
-        "Supprimer les Notifications": "Excluir notificações",
-        "Supprimer toutes les Notifications": "Excluir todas as notificações",
-        "Supprimer les Asks expirés": "Excluir perguntas expiradas",
-        "Supprimer les Asks répondus": "Excluir perguntas respondidas"
-    },
-    "plugins\/mobile\/core\/template\/widgets.html": {
-        "Couleur de l'indicateur de valeur": "Cor do indicador de valor",
-        "Pas du changement de valeur": "Sem alteração no valor",
-        "Inverse la position de l'indicateur de valeur": "Inverte a posição do indicador de valor",
-        "Affiche durée ou date de la valeur": "Exibe a duração ou data do valor",
-        "Date de valeur": "Data de validade",
-        "Date de collecte": "Data de coleta"
-    },
-    "plugins\/mobile\/core\/api\/mobile.api.php": {
-        "JSONRPC object not defined": "Objeto JSONRPC não definido",
-        "EqLogic inconnu : ": "EqLogic desconhecido:",
-        "Cmd inconnu : ": "Cmd desconhecido:",
-        "| [ERROR] EqLogic inconnu : ": "| [ERRO] EqLogic desconhecido:",
-        "| Pas de paramètre de geofencing": "| Sem configurações de cerca geográfica",
-        "| [ERROR] Paramètre Iq inexistant !": "| [ERRO] O parâmetro Iq não existe!",
-        "Aucune demande": "Nenhum pedido",
-        "Aucun": "Nenhum"
-    },
-    "info.json": {
-        "Attention : la version BETA ne supporte plus l'app V1, elle est réservée à la nouvelle app V2 (beta actuellement). Nécessite Android14 ou IOS 12.4 minimum.<br\/><br\/>Attention, l'app v1 n'est pas compatible avec le dernier Android. L'application officielle Jeedom permet le pilotage de votre système domotique Jeedom, que ce soit en Wifi local, ou sur le réseau 3G\/4G de votre opérateur.<br\/><br\/>L'app se connecte automatiquement à votre Jeedom avec une initialisation automatique par QRcode, aucune configuration n'est nécessaire. (possibilité de le faire manuellement)<br\/>Vous retrouverez sur votre mobile toutes les fonctionnalités de votre Jeedom.<br\/>Vous pourrez personnaliser votre application avec des raccourcis et plus encore...<br\/><br\/>Fonctionnalités actuelles:<br\/>- Gestion de vos scénarios.<br\/>- Gestion de votre domotique en fonction de vos pièces et équipements.<br\/>- Maj et retour d'état automatique<br\/>- Compatibilité aves les plugins, tel que thermostat, alarme, caméra etc...<br\/>- Interface personnalisable avec les raccourcis.<br\/>- Résumé domotique général et par pièce<br\/>- Notifications (avec prise en charge du ASK)<br\/>- Affichage des Designs <br\/><br\/>D'autres fonctionnalités et compatibilités sont à venir dans les prochaines mises à jour !<br\/><br\/>Respect de la vie privée.<br\/>Aucune donnée (domotique ou personnelle) n'est stockée ou conservée sur nos serveurs.": "Observação: a versão BETA não suporta mais o aplicativo V1, está reservada para o novo aplicativo V2 (atualmente beta). Requer no mínimo Android14 ou IOS 12.4.<br\/><br\/> Observe que o aplicativo v1 não é compatível com o Android mais recente. O aplicativo oficial Jeedom permite que você controle seu sistema de automação residencial Jeedom, seja via WiFi local, ou na rede 3G\/4G da sua operadora.<br\/><br\/> O aplicativo se conecta automaticamente ao seu Jeedom com inicialização automática por QRcode, nenhuma configuração é necessária. (possibilidade de fazer manualmente)<br\/> Você encontrará todos os recursos do seu Jeedom no seu celular.<br\/> Você poderá personalizar seu aplicativo com atalhos e muito mais...<br\/><br\/> Recursos atuais:<br\/> - Gestão dos seus cenários.<br\/> - Gestão da sua domótica de acordo com as suas divisões e equipamentos.<br\/> - Mudança e retorno automático de status<br\/> - Compatibilidade com plugins, como termostato, alarme, câmera etc...<br\/> - Interface personalizável com atalhos.<br\/> - Resumo geral de automação residencial e por cômodo<br\/> - Notificações (com suporte ASK)<br\/> - Exibição de Projetos<br\/><br\/> Mais recursos e compatibilidade chegarão em atualizações futuras!<br\/><br\/> Respeito pela privacidade.<br\/> Nenhum dado (domótico ou pessoal) é armazenado ou retido em nossos servidores"
+    "plugins\/mobile\/plugin_info\/configuration.php": {
+        "Notifications de l'app": "Notificações de aplicativos",
+        "Réponse Ask sensible à la case : ": "Peça resposta sensível à caixa:"
     }
 }
